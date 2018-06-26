@@ -6,9 +6,8 @@ const obj = {
 
 $(document).ready(function () {
 	
-	let ask = prompt("Please choose either Link, Master Chief, or Vaporeon.");
-	
-	let str = '';
+	let ask = prompt("Please choose either Link, Master Chief, or Vaporeon."),
+		str = '';
 	
 	for (let i in ask) {
 		str += ask[i].toLowerCase();
@@ -18,7 +17,6 @@ $(document).ready(function () {
 		alert("Ey, guy. That's not how we play, guy. Try again, budday.");
 		location.reload();
 	} else {
-		//let ans = ask.toLowerCase();
 		console.log(str);
 		obj[str].removeClass('hidden');
 		$('#home').removeClass('hidden');

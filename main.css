@@ -16,12 +16,14 @@ button:focus {
 	outline: none;
 }
 
+/*Main Div*/
 #firstImpression {
 	display: flex;
 	justify-content: center;
 	margin: 15% auto 5% auto;
 }
 
+/*Link*/
 #not_zelda {
 	text-align: center;
 }
@@ -33,21 +35,18 @@ button:focus {
 	padding: 15px;
 }
 
+/*Master Chief*/
 #chiefPic {
 	box-shadow: 0px 0px 30px purple;
 	border-radius: 15px;
 }
 
+/*Vaporeon*/
 #vapz {
 	box-shadow: 0px 0px 30px purple;
 	border-radius: 10%;
 	padding: 15px;
 }
-
-
-
-
-
 
 
 
