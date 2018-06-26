@@ -8,13 +8,19 @@ $(document).ready(function () {
 	
 	let ask = prompt("Please choose either Link, Master Chief, or Vaporeon.");
 	
-	if (obj[ask] == null) {
+	let str = '';
+	
+	for (let i in ask) {
+		str += ask[i].toLowerCase();
+	}
+	
+	if (obj[str] == null) {
 		alert("Ey, guy. That's not how we play, guy. Try again, budday.");
 		location.reload();
 	} else {
 		//let ans = ask.toLowerCase();
-		console.log(ask);
-		obj[ask].removeClass('hidden');
+		console.log(str);
+		obj[str].removeClass('hidden');
 		$('#home').removeClass('hidden');
 	}
 	
