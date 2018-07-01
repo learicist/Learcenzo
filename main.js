@@ -1,16 +1,31 @@
 const obj = {
 	'link': $('#not_zelda'),
 	'master chief': $('#not_noble6'),
-	'vaporeon': $('#not_pika')
+	'vaporeon': $('#not_pika'),
+	'pr': $('#not_morty')
 }
 
 let curr, str;
 
 $(document).ready(function () {	
 	
+<<<<<<< HEAD
 	function yourMom() {
 		/*curr = */
 		let ask = prompt("Please choose either Link, Master Chief, or Vaporeon."), //response from user
+=======
+	$('#not_morty').on('mouseenter', function (){
+		$(this).attr("title", "Click me for a video!");
+	});
+	
+	$('#pickleRick').on('click', function (){
+		$(this).addClass("hidden");
+		$('#pickleVid').removeClass('hidden');
+	});
+	
+	
+	let ask = prompt("Please choose either Link, Master Chief, pr, or Vaporeon."),
+>>>>>>> 7eb5db0aff86c97fe27353751265f960ec109cd4
 		str = '';
 		
 		for (let i in ask) {
