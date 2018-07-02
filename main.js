@@ -8,7 +8,7 @@ const obj = {
 $(document).ready(function () {	
 
 	function yourMom() {
-		let ask = prompt("Please choose either Link, Master Chief, or Vaporeon.");
+		let ask = prompt("Please choose either Link, Master Chief, PR, or Vaporeon.");
 		let curr, str = ask.toLowerCase();
 		
 		console.log(str);
