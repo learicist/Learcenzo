@@ -16,6 +16,21 @@ button:focus {
 	outline: none;
 }
 
+#startBtn {
+	display: flex;
+	justify-content: center;
+	margin: 15% 0;
+}
+
+#begin {
+	border-radius: 25%;
+	padding: 10px;
+	background-color: purple;
+	color: white;
+	font-size: 22px;
+}
+
+
 /*Main Div*/
 #firstImpression {
 	display: flex;
@@ -59,6 +74,8 @@ button:focus {
 	border-radius: 10%;
 	padding: 15px;
 }
+
+
 
 #reloadBtn {
 	display: flex;

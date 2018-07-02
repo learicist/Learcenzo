@@ -5,60 +5,40 @@ const obj = {
 	'pr': $('#not_morty')
 }
 
-let curr, str;
-
 $(document).ready(function () {	
-	
-<<<<<<< HEAD
+
 	function yourMom() {
-		/*curr = */
-		let ask = prompt("Please choose either Link, Master Chief, or Vaporeon."), //response from user
-=======
-	$('#not_morty').on('mouseenter', function (){
-		$(this).attr("title", "Click me for a video!");
-	});
-	
-	$('#pickleRick').on('click', function (){
-		$(this).addClass("hidden");
-		$('#pickleVid').removeClass('hidden');
-	});
-	
-	
-	let ask = prompt("Please choose either Link, Master Chief, pr, or Vaporeon."),
->>>>>>> 7eb5db0aff86c97fe27353751265f960ec109cd4
-		str = '';
+		let ask = prompt("Please choose either Link, Master Chief, or Vaporeon.");
+		let curr, str = ask.toLowerCase();
 		
-		for (let i in ask) {
-			str += ask[i].toLowerCase();//convert to lowercase
-		}
+		console.log(str);
 		curr = obj[str];
+		
 		if (curr == null) {  //if user is doo
 			alert("Ey, guy. That's not how we play, guy. Try again, budday.");
-			location.reload();  //try again
-		} else {  //otherwise
-			//console.log(str);
+			location.reload(); 
+		} else { 
 			curr.removeClass('hidden');  //display user choice
 			$('#home').removeClass('hidden');  //display home btn
-		}
-		ask = '';
+		} 
 	}
 	
-	yourMom();
-	
-	$('#home').click(function () {
-		
+	$('#begin').click(function () {
+		$('#startBtn').addClass('hidden');
 		yourMom();
-		
-		for (let x in obj) {
-			
-			curr = obj[x]
-			if (!curr.hasClass('hidden')){
-				obj[x].addClass('hidden');
-				
-			}			
-			
-		}
-		
 	});
 	
+	
+	$('#pickleRick').on('click', function () {
+		$(this).addClass("hidden");
+		$('#not_a_pic').removeClass('hidden');
+	});
+	
+	$('#home').click(function () {
+		$('.col-sm-6').each(function() {
+			$(this).addClass('hidden');
+			console.log($(this).hasClass('hidden'));
+		});
+		yourMom();
+	});
 });
