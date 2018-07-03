@@ -24,7 +24,7 @@ $(document).ready(function () {
 	}
 	
 	$('#begin').click(function () {
-		$('#startBtn').addClass('hidden');
+		$('#startBtn #begin').addClass('hidden');
 		yourMom();
 	});
 	
@@ -37,7 +37,7 @@ $(document).ready(function () {
 	$('#home').click(function () {
 		$('.col-sm-6').each(function() {
 			$(this).addClass('hidden');
-			console.log($(this).hasClass('hidden'));
+			//console.log($(this).hasClass('hidden'));
 		});
 		yourMom();
 	});
