@@ -39,7 +39,7 @@ const obj = [
 		thirdName: 'summer',
 		thirdTag: $('#summer')
 	}
-]
+];
 
 $(document).ready(function () {	
 
@@ -61,8 +61,6 @@ $(document).ready(function () {
 			curr.removeClass('hidden');  //display user choice
 			$('#home').removeClass('hidden');  //display home btn;
 		} 
-		
-		
 	}
 	
 	$('#begin').click(function () {
